@@ -6,7 +6,7 @@ INSERT INTO oauth.oauth_client(client_id, resource_ids, client_secret, client_sc
     authorized_grant_types, access_token_validity_seconds, refresh_token_validity_seconds, secret_required)
  VALUES ('admin', 'd_main,d_scraper,d_scheduler',
     /*admin1234*/'$2a$10$zelII7t6Duv2H.JEF2x9RuNseSLRRf90rC6PZj0ILhHtqSvJnUWs6',
-    'read,write', 'password,authorization_code,refresh_token,implicit', 30, 40, true);
+    'read,write', 'password,authorization_code,refresh_token,implicit', 1800, 2400, true);
 
 --rollback delete from oauth.oauth_client where client_id = 'admin';
 
