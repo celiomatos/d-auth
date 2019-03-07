@@ -1,483 +1,92 @@
-2019-02-08 07:49:38.326  INFO 14048 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on ITB00120 with PID 14048 (C:\Users\celio.matos\Downloads\compose\d-auth\target\classes started by celio.matos in C:\Users\celio.matos\Downloads\compose\d-auth)
-2019-02-08 07:49:38.329  INFO 14048 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
-2019-02-08 07:49:39.129  INFO 14048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-08 07:49:39.278  INFO 14048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137ms. Found 5 repository interfaces.
-2019-02-08 07:49:39.993  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9209d04a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.072  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2ab79884] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.080  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.082  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1fc26717' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.083  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4f8c3b36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.086  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 07:49:40.704  INFO 14048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-02-08 07:49:40.736  INFO 14048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-08 07:49:40.737  INFO 14048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-08 07:49:40.752  INFO 14048 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\TortoiseGit\bin;C:\PostgreSQL\pg10\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\;C:\Users\celio.matos\AppData\Local\Microsoft\WindowsApps;C:\Users\celio.matos\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\celio.matos\.dotnet\tools;C:\Users\celio.matos\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\celio.matos\AppData\Local\Yarn\bin;.]
-2019-02-08 07:49:40.918  INFO 14048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-08 07:49:40.919  INFO 14048 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2545 ms
-2019-02-08 07:49:41.166  INFO 14048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-08 07:49:41.339  INFO 14048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-08 07:49:42.571  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 07:49:42.603  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangeloglock (ID INTEGER NOT NULL, LOCKED BOOLEAN NOT NULL, LOCKGRANTED TIMESTAMP WITHOUT TIME ZONE, LOCKEDBY VARCHAR(255), CONSTRAINT DATABASECHANGELOGLOCK_PKEY PRIMARY KEY (ID))
-2019-02-08 07:49:42.619  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 07:49:42.624  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM public.databasechangeloglock
-2019-02-08 07:49:42.627  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangeloglock (ID, LOCKED) VALUES (1, FALSE)
-2019-02-08 07:49:42.635  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-02-08 07:49:42.651  INFO 14048 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2019-02-08 07:49:42.783  INFO 14048 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: public.databasechangelog
-2019-02-08 07:49:42.786  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangelog (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED TIMESTAMP WITHOUT TIME ZONE NOT NULL, ORDEREXECUTED INTEGER NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35), DESCRIPTION VARCHAR(255), COMMENTS VARCHAR(255), TAG VARCHAR(255), LIQUIBASE VARCHAR(20), CONTEXTS VARCHAR(255), LABELS VARCHAR(255), DEPLOYMENT_ID VARCHAR(10))
-2019-02-08 07:49:42.798  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2019-02-08 07:49:42.802  INFO 14048 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2019-02-08 07:49:42.803  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-02-08 07:49:42.808  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 07:49:42.840  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE SCHEMA oauth
-2019-02-08 07:49:42.843  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:42.846  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::1::celio ran successfully in 20ms
-2019-02-08 07:49:42.848  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM public.databasechangelog
-2019-02-08 07:49:43.461  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 1, '8:0e0fcb7ff089f9301cec3849baaa1325', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.466  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_access_token
-(
-  token_id character varying(256) PRIMARY KEY,
-  access_token bytea NOT NULL,
-  authentication_id character varying(256) NOT NULL,
-  user_name character varying(256) NOT NULL UNIQUE,
-  client_id character varying(256) NOT NULL,
-  authentication bytea NOT NULL,
-  refresh_token character varying(256) NOT NULL
-)
-2019-02-08 07:49:43.478  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.483  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::2::celio ran successfully in 18ms
-2019-02-08 07:49:43.484  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 2, '8:4c6dbced37c883de6da1a3f8eb926a07', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.489  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_client
-(
-  client_id character varying(256) PRIMARY KEY,
-  resource_ids character varying(256) NOT NULL,
-  client_secret character varying(256) NOT NULL,
-  client_scope character varying(256) NOT NULL,
-  authorized_grant_types character varying(256) NOT NULL,
-  registered_redirect_uri character varying(256),
-  client_authorities character varying(256),
-  access_token_validity_seconds integer NOT NULL,
-  refresh_token_validity_seconds integer NOT NULL,
-  additional_information character varying(4096),
-  auto_approve character varying(256),
-  secret_required boolean NOT NULL DEFAULT TRUE
-)
-2019-02-08 07:49:43.498  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.501  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::3::celio ran successfully in 13ms
-2019-02-08 07:49:43.503  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('3', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 3, '8:788b18c5f18e4f37c342c8e9b1109d4d', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.511  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_refresh_token
-(
-  token_id character varying(256) PRIMARY KEY,
-  refresh_token bytea NOT NULL,
-  authentication bytea NOT NULL
-)
-2019-02-08 07:49:43.525  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.530  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::4::celio ran successfully in 19ms
-2019-02-08 07:49:43.532  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('4', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 4, '8:f8aa258bfc7cc059e3591c1276b77119', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.538  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_user
-(
-  user_id bigserial PRIMARY KEY,
-  user_name character varying(256) NOT NULL UNIQUE,
-  user_password character varying(256) NOT NULL,
-  user_full_name character varying(256) NOT NULL,
-  account_non_expired boolean NOT NULL default true,
-  account_non_locked boolean NOT NULL default true,
-  credentials_non_expired boolean NOT NULL default true,
-  enabled boolean NOT NULL default true,
-  super_user boolean NOT NULL default false
-)
-2019-02-08 07:49:43.556  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.568  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::5::celio ran successfully in 31ms
-2019-02-08 07:49:43.569  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('5', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 5, '8:1c5a239c3ffed6aa0028fb1d5648faa3', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.584  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_module
-(
-  mod_id bigserial PRIMARY KEY,
-  mod_name character varying(256) NOT NULL UNIQUE
-)
-2019-02-08 07:49:43.593  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.598  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::6::celio ran successfully in 15ms
-2019-02-08 07:49:43.600  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('6', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 6, '8:388b8d22d5053f4dc60d220a8dc376c2', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.605  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_permission
-(
-  perm_id bigserial PRIMARY KEY,
-  perm_name character varying(256) NOT NULL UNIQUE
-)
-2019-02-08 07:49:43.617  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.620  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::7::celio ran successfully in 16ms
-2019-02-08 07:49:43.622  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('7', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 7, '8:da91c14f6c6cf6366116059193c1aa1f', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.629  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_authority
-(
-  authority_id bigserial PRIMARY KEY,
-  mod_id bigint NOT NULL,
-  perm_id bigint NOT NULL,
-  UNIQUE(mod_id, perm_id),
-  FOREIGN KEY (mod_id) REFERENCES oauth.oauth_module (mod_id),
-  FOREIGN KEY (perm_id) REFERENCES oauth.oauth_permission (perm_id)
-)
-2019-02-08 07:49:43.640  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.643  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::8::celio ran successfully in 15ms
-2019-02-08 07:49:43.644  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 8, '8:9d935650613ef42a9f884b1932ce113a', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.653  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_user_authority
-(
-  user_id bigint NOT NULL,
-  authority_id bigint NOT NULL,
-  UNIQUE(user_id, authority_id),
-  FOREIGN KEY (authority_id) REFERENCES oauth.oauth_authority (authority_id),
-  FOREIGN KEY (user_id) REFERENCES oauth.oauth_user (user_id)
-)
-2019-02-08 07:49:43.662  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.665  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::9::celio ran successfully in 13ms
-2019-02-08 07:49:43.666  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 9, '8:1f88eee8fc9c9db1aac05804aaac5d91', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.672  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_client(client_id, resource_ids, client_secret, client_scope,
-    authorized_grant_types, access_token_validity_seconds, refresh_token_validity_seconds, secret_required)
- VALUES ('admin', 'd_main,d_scraper,d_scheduler',
-    '$2a$10$zelII7t6Duv2H.JEF2x9RuNseSLRRf90rC6PZj0ILhHtqSvJnUWs6',
-    'read,write', 'password,authorization_code,refresh_token,implicit', 30, 40, true)
-2019-02-08 07:49:43.674  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.679  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::10::celio ran successfully in 8ms
-2019-02-08 07:49:43.680  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('10', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 10, '8:026becf4e7c0cba91f1c7eecc554baaa', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.685  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_module(mod_id, mod_name) VALUES (1, 'USUARIO')
-2019-02-08 07:49:43.687  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.690  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::11::celio ran successfully in 5ms
-2019-02-08 07:49:43.692  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('11', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 11, '8:27b91bf6dcea240d648d81ff40ee667d', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.702  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_permission(perm_id, perm_name) VALUES (1, 'CREATE')
-2019-02-08 07:49:43.704  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.707  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::12::celio ran successfully in 6ms
-2019-02-08 07:49:43.708  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('12', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 12, '8:f2636f00d4f5caba9571e0d529a24d5b', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.714  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_authority(authority_id, mod_id, perm_id) VALUES (1, 1, 1)
-2019-02-08 07:49:43.721  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.724  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::13::celio ran successfully in 11ms
-2019-02-08 07:49:43.726  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('13', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 13, '8:ff3c6887dadf50df4d48e92a6b8422c5', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.730  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_user(user_id, user_name, user_password, user_full_name,
-    account_non_expired, account_non_locked , credentials_non_expired, enabled, super_user)
-  VALUES (1, 'user', '$2a$10$UtSgFInoXOGAzuEA93Hg7.Z6lPcWUIgaPttERZvLnx3KuKsmAVo8a',
-  'user principal', true, true, true, true, false)
-2019-02-08 07:49:43.733  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.736  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::14::celio ran successfully in 6ms
-2019-02-08 07:49:43.737  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('14', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 14, '8:66d17ba9f1c6fc3f141f6e01da87182e', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.741  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_user_authority(user_id, authority_id) VALUES (1, 1)
-2019-02-08 07:49:43.743  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 07:49:43.746  INFO 14048 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::15::celio ran successfully in 5ms
-2019-02-08 07:49:43.747  INFO 14048 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('15', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 15, '8:3e4d16e5cb8758db7bf9d3d96c041948', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9626582810')
-2019-02-08 07:49:43.758  INFO 14048 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
-2019-02-08 07:49:43.996  INFO 14048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-03-04 22:40:14.406  INFO 9106 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on celio-PC with PID 9106 (/home/celio/Source/d-auth/target/classes started by celio in /home/celio/Source/d-auth)
+2019-03-04 22:40:14.479  INFO 9106 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
+2019-03-04 22:40:18.675  INFO 9106 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 22:40:19.133  INFO 9106 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 396ms. Found 5 repository interfaces.
+2019-03-04 22:40:21.242  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81d5f4b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:21.542  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$1a83bcef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:21.589  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:21.598  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f8247eb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:21.617  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$3f585fa1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:21.641  INFO 9106 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 22:40:24.371  INFO 9106 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-03-04 22:40:24.574  INFO 9106 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-04 22:40:24.574  INFO 9106 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-04 22:40:24.623  INFO 9106 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea-community/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 22:40:25.089  INFO 9106 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-04 22:40:25.090  INFO 9106 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10346 ms
+2019-03-04 22:40:25.964  INFO 9106 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-04 22:40:26.720  INFO 9106 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-04 22:40:30.237  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2019-03-04 22:40:30.462  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2019-03-04 22:40:30.470  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-03-04 22:40:30.696  INFO 9106 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-03-04 22:40:31.639  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-03-04 22:40:31.682  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
+2019-03-04 22:40:31.702  INFO 9106 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
+2019-03-04 22:40:31.702  INFO 9106 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-03-04 22:40:31.873  INFO 9106 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-03-04 22:40:32.747  INFO 9106 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-08 07:49:44.165  INFO 14048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-08 07:49:44.167  INFO 14048 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-08 07:49:44.403  INFO 14048 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-08 07:49:44.636  INFO 14048 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-02-08 07:49:44.676  INFO 14048 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2019-02-08 07:49:44.690  INFO 14048 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@577481ed
-2019-02-08 07:49:45.884  INFO 14048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 07:49:46.644  WARN 14048 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-08 07:49:47.475  INFO 14048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fe083a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fd113a4, org.springframework.security.web.header.HeaderWriterFilter@4544af0c, org.springframework.security.web.authentication.logout.LogoutFilter@c204caf, org.springframework.web.filter.CorsFilter@76c9910e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23844138, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13dfaeb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11c60360, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d283075, org.springframework.security.web.session.SessionManagementFilter@267bae77, org.springframework.security.web.access.ExceptionTranslationFilter@706c5629, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b98d869]
-2019-02-08 07:49:47.482  INFO 14048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cd39f7f, org.springframework.security.web.context.SecurityContextPersistenceFilter@64fdda90, org.springframework.security.web.header.HeaderWriterFilter@1403298b, org.springframework.security.web.csrf.CsrfFilter@53bed972, org.springframework.security.web.authentication.logout.LogoutFilter@74078e3f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ab835ab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e24e231, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a69b3b1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@578ded48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aa520c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5767156a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33bf514e, org.springframework.security.web.session.SessionManagementFilter@31530730, org.springframework.security.web.access.ExceptionTranslationFilter@3c2058cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79a6ee81]
-2019-02-08 07:49:47.865  INFO 14048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-02-08 07:49:47.868  INFO 14048 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 10.222 seconds (JVM running for 18.5)
-2019-02-08 07:51:09.595  INFO 14048 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-08 07:51:09.596  INFO 14048 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-02-08 07:51:09.607  INFO 14048 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2019-02-08 07:51:09.736  INFO 14048 --- [http-nio-8081-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-02-08 09:31:55.310  INFO 9084 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on ITB00120 with PID 9084 (C:\Users\celio.matos\Downloads\compose\d-auth\target\classes started by celio.matos in C:\Users\celio.matos\Downloads\compose\d-auth)
-2019-02-08 09:31:55.317  INFO 9084 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
-2019-02-08 09:31:56.230  INFO 9084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-08 09:31:56.336  INFO 9084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 5 repository interfaces.
-2019-02-08 09:31:56.918  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e509533] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:56.995  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$6fe5d6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:57.007  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:57.010  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1194b79d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:57.013  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2bd3001f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:57.023  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:31:57.785  INFO 9084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-02-08 09:31:57.819  INFO 9084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-08 09:31:57.820  INFO 9084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-08 09:31:57.834  INFO 9084 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\TortoiseGit\bin;C:\PostgreSQL\pg10\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\;C:\Users\celio.matos\AppData\Local\Microsoft\WindowsApps;C:\Users\celio.matos\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\celio.matos\.dotnet\tools;C:\Users\celio.matos\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\celio.matos\AppData\Local\Yarn\bin;.]
-2019-02-08 09:31:57.965  INFO 9084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-08 09:31:57.965  INFO 9084 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2575 ms
-2019-02-08 09:31:58.228  INFO 9084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-08 09:31:58.370  INFO 9084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-08 09:31:59.365  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:31:59.368  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:31:59.371  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-02-08 09:31:59.387  INFO 9084 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2019-02-08 09:31:59.477  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-02-08 09:31:59.480  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2019-02-08 09:31:59.482  INFO 9084 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2019-02-08 09:31:59.482  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-02-08 09:31:59.529  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE SCHEMA oauth
-2019-02-08 09:31:59.532  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:31:59.537  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::1::celio ran successfully in 23ms
-2019-02-08 09:31:59.539  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM public.databasechangelog
-2019-02-08 09:32:00.330  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 107, '8:0e0fcb7ff089f9301cec3849baaa1325', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.338  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_access_token
-(
-  token_id character varying(256) PRIMARY KEY,
-  access_token bytea NOT NULL,
-  authentication_id character varying(256) NOT NULL,
-  user_name character varying(256) NOT NULL UNIQUE,
-  client_id character varying(256) NOT NULL,
-  authentication bytea NOT NULL,
-  refresh_token character varying(256) NOT NULL
-)
-2019-02-08 09:32:00.352  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.355  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::2::celio ran successfully in 19ms
-2019-02-08 09:32:00.357  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 108, '8:4c6dbced37c883de6da1a3f8eb926a07', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.365  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_client
-(
-  client_id character varying(256) PRIMARY KEY,
-  resource_ids character varying(256) NOT NULL,
-  client_secret character varying(256) NOT NULL,
-  client_scope character varying(256) NOT NULL,
-  authorized_grant_types character varying(256) NOT NULL,
-  registered_redirect_uri character varying(256),
-  client_authorities character varying(256),
-  access_token_validity_seconds integer NOT NULL,
-  refresh_token_validity_seconds integer NOT NULL,
-  additional_information character varying(4096),
-  auto_approve character varying(256),
-  secret_required boolean NOT NULL DEFAULT TRUE
-)
-2019-02-08 09:32:00.382  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.386  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::3::celio ran successfully in 24ms
-2019-02-08 09:32:00.388  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('3', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 109, '8:788b18c5f18e4f37c342c8e9b1109d4d', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.395  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_refresh_token
-(
-  token_id character varying(256) PRIMARY KEY,
-  refresh_token bytea NOT NULL,
-  authentication bytea NOT NULL
-)
-2019-02-08 09:32:00.407  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.410  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::4::celio ran successfully in 16ms
-2019-02-08 09:32:00.412  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('4', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 110, '8:f8aa258bfc7cc059e3591c1276b77119', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.420  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_user
-(
-  user_id bigserial PRIMARY KEY,
-  user_name character varying(256) NOT NULL UNIQUE,
-  user_password character varying(256) NOT NULL,
-  user_full_name character varying(256) NOT NULL,
-  account_non_expired boolean NOT NULL default true,
-  account_non_locked boolean NOT NULL default true,
-  credentials_non_expired boolean NOT NULL default true,
-  enabled boolean NOT NULL default true,
-  super_user boolean NOT NULL default false
-)
-2019-02-08 09:32:00.436  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.439  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::5::celio ran successfully in 21ms
-2019-02-08 09:32:00.441  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('5', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 111, '8:1c5a239c3ffed6aa0028fb1d5648faa3', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.447  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_module
-(
-  mod_id bigserial PRIMARY KEY,
-  mod_name character varying(256) NOT NULL UNIQUE
-)
-2019-02-08 09:32:00.459  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.463  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::6::celio ran successfully in 16ms
-2019-02-08 09:32:00.465  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('6', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 112, '8:388b8d22d5053f4dc60d220a8dc376c2', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.473  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_permission
-(
-  perm_id bigserial PRIMARY KEY,
-  perm_name character varying(256) NOT NULL UNIQUE
-)
-2019-02-08 09:32:00.485  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.489  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::7::celio ran successfully in 17ms
-2019-02-08 09:32:00.491  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('7', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 113, '8:da91c14f6c6cf6366116059193c1aa1f', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.500  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_authority
-(
-  authority_id bigserial PRIMARY KEY,
-  mod_id bigint NOT NULL,
-  perm_id bigint NOT NULL,
-  UNIQUE(mod_id, perm_id),
-  FOREIGN KEY (mod_id) REFERENCES oauth.oauth_module (mod_id),
-  FOREIGN KEY (perm_id) REFERENCES oauth.oauth_permission (perm_id)
-)
-2019-02-08 09:32:00.514  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.519  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::8::celio ran successfully in 21ms
-2019-02-08 09:32:00.521  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 114, '8:9d935650613ef42a9f884b1932ce113a', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.529  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE oauth.oauth_user_authority
-(
-  user_id bigint NOT NULL,
-  authority_id bigint NOT NULL,
-  UNIQUE(user_id, authority_id),
-  FOREIGN KEY (authority_id) REFERENCES oauth.oauth_authority (authority_id),
-  FOREIGN KEY (user_id) REFERENCES oauth.oauth_user (user_id)
-)
-2019-02-08 09:32:00.538  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.541  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-01.sql::9::celio ran successfully in 13ms
-2019-02-08 09:32:00.543  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9', 'celio', 'db/changelog/migrations/db.changelog-auth-01.sql', NOW(), 115, '8:1f88eee8fc9c9db1aac05804aaac5d91', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.551  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_client(client_id, resource_ids, client_secret, client_scope,
-    authorized_grant_types, access_token_validity_seconds, refresh_token_validity_seconds, secret_required)
- VALUES ('admin', 'd_main,d_scraper,d_scheduler',
-    '$2a$10$zelII7t6Duv2H.JEF2x9RuNseSLRRf90rC6PZj0ILhHtqSvJnUWs6',
-    'read,write', 'password,authorization_code,refresh_token,implicit', 30, 40, true)
-2019-02-08 09:32:00.554  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.557  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::10::celio ran successfully in 8ms
-2019-02-08 09:32:00.558  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('10', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 116, '8:026becf4e7c0cba91f1c7eecc554baaa', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.564  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_module(mod_id, mod_name) VALUES (1, 'USUARIO')
-2019-02-08 09:32:00.566  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.569  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::11::celio ran successfully in 6ms
-2019-02-08 09:32:00.570  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('11', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 117, '8:27b91bf6dcea240d648d81ff40ee667d', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.575  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_permission(perm_id, perm_name) VALUES (1, 'CREATE')
-2019-02-08 09:32:00.577  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.581  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::12::celio ran successfully in 6ms
-2019-02-08 09:32:00.582  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('12', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 118, '8:f2636f00d4f5caba9571e0d529a24d5b', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.590  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_authority(authority_id, mod_id, perm_id) VALUES (1, 1, 1)
-2019-02-08 09:32:00.593  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.596  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::13::celio ran successfully in 7ms
-2019-02-08 09:32:00.597  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('13', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 119, '8:ff3c6887dadf50df4d48e92a6b8422c5', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.605  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_user(user_id, user_name, user_password, user_full_name,
-    account_non_expired, account_non_locked , credentials_non_expired, enabled, super_user)
-  VALUES (1, 'user', '$2a$10$UtSgFInoXOGAzuEA93Hg7.Z6lPcWUIgaPttERZvLnx3KuKsmAVo8a',
-  'user principal', true, true, true, true, false)
-2019-02-08 09:32:00.608  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.612  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::14::celio ran successfully in 8ms
-2019-02-08 09:32:00.619  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('14', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 120, '8:66d17ba9f1c6fc3f141f6e01da87182e', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.626  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO oauth.oauth_user_authority(user_id, authority_id) VALUES (1, 1)
-2019-02-08 09:32:00.630  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
-2019-02-08 09:32:00.634  INFO 9084 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/migrations/db.changelog-auth-02.sql::15::celio ran successfully in 8ms
-2019-02-08 09:32:00.635  INFO 9084 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('15', 'celio', 'db/changelog/migrations/db.changelog-auth-02.sql', NOW(), 121, '8:3e4d16e5cb8758db7bf9d3d96c041948', 'sql', '', 'EXECUTED', NULL, NULL, '3.6.2', '9632719498')
-2019-02-08 09:32:00.649  INFO 9084 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
-2019-02-08 09:32:00.835  INFO 9084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-03-04 22:40:33.187  INFO 9106 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-04 22:40:33.204  INFO 9106 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-04 22:40:34.108  INFO 9106 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-04 22:40:34.638  INFO 9106 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-03-04 22:40:34.697  INFO 9106 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2019-03-04 22:40:34.742  INFO 9106 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6fba62c0
+2019-03-04 22:40:36.509  INFO 9106 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-04 22:40:38.015  WARN 9106 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-04 22:40:39.525  INFO 9106 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a519ca6, org.springframework.security.web.context.SecurityContextPersistenceFilter@485870c6, org.springframework.security.web.header.HeaderWriterFilter@6550b5de, org.springframework.security.web.authentication.logout.LogoutFilter@4656059f, org.springframework.web.filter.CorsFilter@6991af5b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e4a68c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1630e9dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aedbe21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d74db79, org.springframework.security.web.session.SessionManagementFilter@262f1507, org.springframework.security.web.access.ExceptionTranslationFilter@12b63b5d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39fb3d2d]
+2019-03-04 22:40:39.559  INFO 9106 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71cf1ab9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b5005b7, org.springframework.security.web.header.HeaderWriterFilter@28ed5f9a, org.springframework.security.web.csrf.CsrfFilter@66a0cf73, org.springframework.security.web.authentication.logout.LogoutFilter@55a44a16, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@505d4007, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e9289ce, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46ffdd0c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b2826a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22dc32fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@608fb8b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46c96568, org.springframework.security.web.session.SessionManagementFilter@4856d6a3, org.springframework.security.web.access.ExceptionTranslationFilter@3d3a9bea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76ae8352]
+2019-03-04 22:40:40.262  INFO 9106 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-03-04 22:40:40.271  INFO 9106 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 30.529 seconds (JVM running for 59.181)
+2019-03-04 22:41:06.640  INFO 9106 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-04 22:41:06.640  INFO 9106 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-04 22:41:06.662  INFO 9106 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-03-04 22:41:06.834  INFO 9106 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-04 23:11:59.386  INFO 9135 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on celio-PC with PID 9135 (/home/celio/Source/d-auth/target/classes started by celio in /home/celio/Source/d-auth)
+2019-03-04 23:11:59.568  INFO 9135 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
+2019-03-04 23:12:03.686  INFO 9135 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 23:12:04.352  INFO 9135 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 501ms. Found 5 repository interfaces.
+2019-03-04 23:12:05.236  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a0523bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:05.419  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c2b2ebf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:05.429  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:05.431  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@11452d6d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:05.434  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$e7878ea7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:05.444  INFO 9135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 23:12:07.125  INFO 9135 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-03-04 23:12:07.241  INFO 9135 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-04 23:12:07.242  INFO 9135 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-04 23:12:07.281  INFO 9135 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea-community/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 23:12:07.568  INFO 9135 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-04 23:12:07.569  INFO 9135 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7475 ms
+2019-03-04 23:12:08.071  INFO 9135 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-04 23:12:08.490  INFO 9135 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-04 23:12:09.795  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2019-03-04 23:12:09.916  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2019-03-04 23:12:09.918  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-03-04 23:12:09.956  INFO 9135 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-03-04 23:12:10.281  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-03-04 23:12:10.320  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
+2019-03-04 23:12:10.348  INFO 9135 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
+2019-03-04 23:12:10.349  INFO 9135 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-03-04 23:12:10.392  INFO 9135 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-03-04 23:12:10.792  INFO 9135 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-08 09:32:00.911  INFO 9084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-08 09:32:00.913  INFO 9084 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-08 09:32:01.078  INFO 9084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-08 09:32:01.314  INFO 9084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-02-08 09:32:01.333  INFO 9084 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2019-02-08 09:32:01.339  INFO 9084 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3d2b5433
-2019-02-08 09:32:02.391  INFO 9084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 09:32:03.026  WARN 9084 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-08 09:32:03.735  INFO 9084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41aa47e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@516bf445, org.springframework.security.web.header.HeaderWriterFilter@455e771e, org.springframework.security.web.authentication.logout.LogoutFilter@3ea598d3, org.springframework.web.filter.CorsFilter@bf5c22b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4bc99601, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e3b9cab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69701d82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25b05e3, org.springframework.security.web.session.SessionManagementFilter@fa32207, org.springframework.security.web.access.ExceptionTranslationFilter@c736360, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5921841e]
-2019-02-08 09:32:03.741  INFO 9084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@751a46f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bca5b77, org.springframework.security.web.header.HeaderWriterFilter@aaea51e, org.springframework.security.web.csrf.CsrfFilter@6a2c5ade, org.springframework.security.web.authentication.logout.LogoutFilter@7109da27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65e3d779, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@86129bf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@34a6f3a7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@eb91047, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12808438, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d795523, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7976c195, org.springframework.security.web.session.SessionManagementFilter@2dcf43f, org.springframework.security.web.access.ExceptionTranslationFilter@43ff519f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e03676d]
-2019-02-08 09:32:04.077  INFO 9084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-02-08 09:32:04.079  INFO 9084 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 9.599 seconds (JVM running for 17.33)
-2019-02-08 09:33:26.673  INFO 9084 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-08 09:33:26.674  INFO 9084 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-02-08 09:33:26.683  INFO 9084 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-02-08 09:33:26.808  INFO 9084 --- [http-nio-8081-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-02-08 09:34:45.470  INFO 15904 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on ITB00120 with PID 15904 (C:\Users\celio.matos\Downloads\compose\d-auth\target\classes started by celio.matos in C:\Users\celio.matos\Downloads\compose\d-auth)
-2019-02-08 09:34:45.474  INFO 15904 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
-2019-02-08 09:34:46.155  INFO 15904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-08 09:34:46.258  INFO 15904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 5 repository interfaces.
-2019-02-08 09:34:46.656  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58058d13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:46.709  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f0b3554d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:46.718  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:46.720  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@48e6d08c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:46.723  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1587f7ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:46.728  INFO 15904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:34:47.246  INFO 15904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-02-08 09:34:47.273  INFO 15904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-08 09:34:47.273  INFO 15904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-08 09:34:47.287  INFO 15904 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\TortoiseGit\bin;C:\PostgreSQL\pg10\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\;C:\Users\celio.matos\AppData\Local\Microsoft\WindowsApps;C:\Users\celio.matos\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\celio.matos\.dotnet\tools;C:\Users\celio.matos\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\celio.matos\AppData\Local\Yarn\bin;.]
-2019-02-08 09:34:47.376  INFO 15904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-08 09:34:47.376  INFO 15904 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1851 ms
-2019-02-08 09:34:47.563  INFO 15904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-08 09:34:47.666  INFO 15904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-08 09:34:48.534  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:34:48.537  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:34:48.540  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-02-08 09:34:48.562  INFO 15904 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2019-02-08 09:34:48.691  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-02-08 09:34:48.694  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2019-02-08 09:34:48.697  INFO 15904 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2019-02-08 09:34:48.698  INFO 15904 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-02-08 09:34:48.731  INFO 15904 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
-2019-02-08 09:34:48.893  INFO 15904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-08 09:34:48.965  INFO 15904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-08 09:34:48.967  INFO 15904 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-08 09:34:49.145  INFO 15904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-08 09:34:49.290  INFO 15904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-02-08 09:34:49.320  INFO 15904 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2019-02-08 09:34:49.327  INFO 15904 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5512c4b1
-2019-02-08 09:34:50.313  INFO 15904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 09:34:51.079  WARN 15904 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-08 09:34:51.904  INFO 15904 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@247ad56e, org.springframework.security.web.context.SecurityContextPersistenceFilter@33e8fe84, org.springframework.security.web.header.HeaderWriterFilter@4a7a6a26, org.springframework.security.web.authentication.logout.LogoutFilter@293756b9, org.springframework.web.filter.CorsFilter@3617141d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1386596c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684a6ee5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32085940, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49927d8e, org.springframework.security.web.session.SessionManagementFilter@5c3174ef, org.springframework.security.web.access.ExceptionTranslationFilter@3e81e9ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d1eaaf2]
-2019-02-08 09:34:51.913  INFO 15904 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@621d8d5b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ef2500, org.springframework.security.web.header.HeaderWriterFilter@f66d435, org.springframework.security.web.csrf.CsrfFilter@1c6cce60, org.springframework.security.web.authentication.logout.LogoutFilter@205f2c72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@db6d550, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5fe7d5ab, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71171707, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@59badf69, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b547516, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32aacf35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@674c2046, org.springframework.security.web.session.SessionManagementFilter@75830477, org.springframework.security.web.access.ExceptionTranslationFilter@31c78e2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5472ef24]
-2019-02-08 09:34:52.328  INFO 15904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-02-08 09:34:52.331  INFO 15904 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 7.733 seconds (JVM running for 15.255)
-2019-02-08 09:43:39.760  INFO 14368 --- [main] br.com.dauth.DAuthApplication            : Starting DAuthApplication on ITB00120 with PID 14368 (C:\Users\celio.matos\Downloads\compose\d-auth\target\classes started by celio.matos in C:\Users\celio.matos\Downloads\compose\d-auth)
-2019-02-08 09:43:39.766  INFO 14368 --- [main] br.com.dauth.DAuthApplication            : No active profile set, falling back to default profiles: default
-2019-02-08 09:43:40.518  INFO 14368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-08 09:43:40.718  INFO 14368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181ms. Found 5 repository interfaces.
-2019-02-08 09:43:41.367  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f136dae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:41.430  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a7c135e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:41.435  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:41.438  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2177c469' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:41.439  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$cc95d89a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:41.443  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 09:43:42.218  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-02-08 09:43:42.279  INFO 14368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-08 09:43:42.280  INFO 14368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-08 09:43:42.304  INFO 14368 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\TortoiseGit\bin;C:\PostgreSQL\pg10\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\celio.matos\AppData\Local\Programs\Python\Python37-32\;C:\Users\celio.matos\AppData\Local\Microsoft\WindowsApps;C:\Users\celio.matos\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\celio.matos\.dotnet\tools;C:\Users\celio.matos\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\celio.matos\AppData\Local\Yarn\bin;.]
-2019-02-08 09:43:42.410  INFO 14368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-08 09:43:42.410  INFO 14368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2573 ms
-2019-02-08 09:43:42.582  INFO 14368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-08 09:43:42.724  INFO 14368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-08 09:43:43.759  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:43:43.762  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 09:43:43.765  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-02-08 09:43:43.782  INFO 14368 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2019-02-08 09:43:43.877  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-02-08 09:43:43.880  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2019-02-08 09:43:43.882  INFO 14368 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2019-02-08 09:43:43.882  INFO 14368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-02-08 09:43:43.910  INFO 14368 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
-2019-02-08 09:43:44.031  INFO 14368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-08 09:43:44.105  INFO 14368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-08 09:43:44.106  INFO 14368 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-08 09:43:44.294  INFO 14368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-08 09:43:44.468  INFO 14368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-02-08 09:43:44.486  INFO 14368 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2019-02-08 09:43:44.492  INFO 14368 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@37c2066b
-2019-02-08 09:43:45.293  INFO 14368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 09:43:46.028  WARN 14368 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-08 09:43:46.833  INFO 14368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f63d700, org.springframework.security.web.context.SecurityContextPersistenceFilter@35ae5969, org.springframework.security.web.header.HeaderWriterFilter@c2e04a, org.springframework.security.web.authentication.logout.LogoutFilter@7938c35b, org.springframework.web.filter.CorsFilter@2ebeae90, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7985e72f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@190a8e1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2659ecc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bf5afc2, org.springframework.security.web.session.SessionManagementFilter@4950e4a5, org.springframework.security.web.access.ExceptionTranslationFilter@5f69b596, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24723146]
-2019-02-08 09:43:46.842  INFO 14368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4177383a, org.springframework.security.web.context.SecurityContextPersistenceFilter@17c2d75b, org.springframework.security.web.header.HeaderWriterFilter@498b38fc, org.springframework.security.web.csrf.CsrfFilter@226195be, org.springframework.security.web.authentication.logout.LogoutFilter@208b4016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ce0a638, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2172336c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@185c29d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@680f8265, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aac247d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@af0b30c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76ad500, org.springframework.security.web.session.SessionManagementFilter@67699816, org.springframework.security.web.access.ExceptionTranslationFilter@22f5e2dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1eb060d4]
-2019-02-08 09:43:47.183  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-02-08 09:43:47.186  INFO 14368 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 8.165 seconds (JVM running for 15.333)
-2019-02-08 09:44:35.223  INFO 14368 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-08 09:44:35.224  INFO 14368 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-02-08 09:44:35.235  INFO 14368 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2019-02-08 09:44:35.384  INFO 14368 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-02-08 10:29:45.403  INFO 15404 --- [main] br.com.dauth.DAuthApplicationTests       : Starting DAuthApplicationTests on ITB00120 with PID 15404 (started by celio.matos in C:\Users\celio.matos\Downloads\compose\d-auth)
-2019-02-08 10:29:45.407  INFO 15404 --- [main] br.com.dauth.DAuthApplicationTests       : No active profile set, falling back to default profiles: default
-2019-02-08 10:29:46.559  INFO 15404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-08 10:29:46.681  INFO 15404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 5 repository interfaces.
-2019-02-08 10:29:47.295  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$760c6b9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.359  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$eba33d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.380  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.383  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c551ad4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.396  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$338ed686] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.408  INFO 15404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-08 10:29:47.694  INFO 15404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-08 10:29:47.865  INFO 15404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-08 10:29:48.947  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 10:29:48.950  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2019-02-08 10:29:48.953  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-02-08 10:29:48.970  INFO 15404 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2019-02-08 10:29:49.117  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-02-08 10:29:49.121  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2019-02-08 10:29:49.123  INFO 15404 --- [main] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2019-02-08 10:29:49.123  INFO 15404 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-02-08 10:29:49.171  INFO 15404 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
-2019-02-08 10:29:49.488  INFO 15404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-08 10:29:49.564  INFO 15404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-08 10:29:49.565  INFO 15404 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-08 10:29:49.727  INFO 15404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-08 10:29:49.887  INFO 15404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-02-08 10:29:49.907  INFO 15404 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2019-02-08 10:29:49.913  INFO 15404 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1b8fa2fa
-2019-02-08 10:29:50.894  INFO 15404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 10:29:51.935  WARN 15404 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-08 10:29:52.930  INFO 15404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28b68067, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cf15477, org.springframework.security.web.header.HeaderWriterFilter@221cdd87, org.springframework.security.web.authentication.logout.LogoutFilter@29174dfe, org.springframework.web.filter.CorsFilter@14fff5e7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76208b80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3450bd13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ab39942, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19540247, org.springframework.security.web.session.SessionManagementFilter@7c79f2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1c14d24d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bfdaed7]
-2019-02-08 10:29:52.979  INFO 15404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29eaf100, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c356e, org.springframework.security.web.header.HeaderWriterFilter@1fa44f66, org.springframework.security.web.csrf.CsrfFilter@3ebc6d8b, org.springframework.security.web.authentication.logout.LogoutFilter@31dd0e2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50e0b472, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54ef9698, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c1a6db1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@673605ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66e218d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b80b41d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dac6bc3, org.springframework.security.web.session.SessionManagementFilter@4229b92c, org.springframework.security.web.access.ExceptionTranslationFilter@7e7391e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f75a35]
-2019-02-08 10:29:53.580  INFO 15404 --- [main] br.com.dauth.DAuthApplicationTests       : Started DAuthApplicationTests in 8.878 seconds (JVM running for 9.896)
-2019-02-08 10:29:53.697  INFO 15404 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-02-08 10:29:53.701  INFO 15404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-02-08 10:29:53.711  INFO 15404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-04 23:12:11.054  INFO 9135 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-04 23:12:11.067  INFO 9135 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-04 23:12:11.446  INFO 9135 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-04 23:12:12.118  INFO 9135 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-03-04 23:12:12.147  INFO 9135 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2019-03-04 23:12:12.198  INFO 9135 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@159abc76
+2019-03-04 23:12:13.147  INFO 9135 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-04 23:12:13.892  WARN 9135 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-04 23:12:14.563  INFO 9135 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dd67850, org.springframework.security.web.context.SecurityContextPersistenceFilter@44297cd1, org.springframework.security.web.header.HeaderWriterFilter@224e994d, org.springframework.security.web.authentication.logout.LogoutFilter@2da9d987, org.springframework.web.filter.CorsFilter@4549a7bf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e0ac02d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27fb7b87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@139edce9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45e8cb07, org.springframework.security.web.session.SessionManagementFilter@1d5bc541, org.springframework.security.web.access.ExceptionTranslationFilter@3bb96d7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@709a82b2]
+2019-03-04 23:12:14.580  INFO 9135 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34baf8ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f163338, org.springframework.security.web.header.HeaderWriterFilter@635ef8e5, org.springframework.security.web.csrf.CsrfFilter@6e462a91, org.springframework.security.web.authentication.logout.LogoutFilter@2a00cfc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5bdbcb07, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3491a59d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c52c1e7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@313c8e1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60ce438, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1201adcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@776e0d96, org.springframework.security.web.session.SessionManagementFilter@3c9344bd, org.springframework.security.web.access.ExceptionTranslationFilter@56ffe993, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41ea0e3b]
+2019-03-04 23:12:15.007  INFO 9135 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-03-04 23:12:15.009  INFO 9135 --- [main] br.com.dauth.DAuthApplication            : Started DAuthApplication in 20.351 seconds (JVM running for 40.289)
+2019-03-04 23:12:59.023  INFO 9135 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-04 23:12:59.024  INFO 9135 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-04 23:12:59.036  INFO 9135 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-03-04 23:12:59.207  INFO 9135 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
