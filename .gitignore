@@ -42,4 +42,7 @@ buildNumber.properties
 *.log
 *.gz
 
+### Docker ###
+docker/*.war
+
 # End of https://www.gitignore.io/api/maven
