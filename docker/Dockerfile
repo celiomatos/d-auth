@@ -1,4 +1,4 @@
 FROM openjdk:8u191-jre-alpine3.8
 WORKDIR /app
 COPY d-auth.war .
-CMD echo "172.17.0.2      d-server-db" >> /etc/hosts && java -jar d-auth.war
+CMD echo "172.18.0.2      d-server-db" >> /etc/hosts && echo "172.18.0.3      d-server-admin" >> /etc/hosts && java -jar d-auth.war
