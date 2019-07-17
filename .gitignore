@@ -44,5 +44,6 @@ buildNumber.properties
 
 ### Docker ###
 docker/*.war
+.idea
 
 # End of https://www.gitignore.io/api/maven
