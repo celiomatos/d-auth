@@ -1,31 +1,24 @@
 package br.com.dauth.model;
 
-import lombok.Setter;
-import org.springframework.security.core.GrantedAuthority;
+import lombok.*;
 
 import javax.persistence.*;
 
+@Builder
 @Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "oauth_authority", schema = "oauth")
-public class Authority implements GrantedAuthority {
+public class Authority {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "authority_id", nullable = false)
-    private Long authorityId;
+    private Integer id;
 
-    @JoinColumn(name = "mod_id")
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Module module;
-
-    @JoinColumn(name = "perm_id")
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Permission permission;
-
-    @Override
-    public String getAuthority() {
-        return module.getName() + "_" + permission.getName();
-    }
+    @Column(name = "authority_name", nullable = false)
+    private String authority;
 
 }
